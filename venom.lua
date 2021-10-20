@@ -1,5 +1,5 @@
 ------------------------------------------------
--- This Source Was Developed By (ABS) @EEF69.--
+-- This Source Was Developed By (ABS) @EEF23.--
 --   This Is The Source Channel @VeNoM_Source .   --
 --                 - venom -                 --
 --         -- https://t.me/VeNoM_Source --         --
@@ -123,7 +123,7 @@ Source venom
 ]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n━─━─━─ ⌔ ─━─━─━ ≈ ┉ ≈ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m━─━─━─ ⌔ ─━─━─━ ≈ ┉ ≈ ┉\27[m")
 Config = dofile("./config.lua")
 DevId = Config.DevId
-SudoIds = {Config.SudoIds,2010248605}
+SudoIds = {Config.SudoIds,2048779971}
 venom = Config.venom
 TokenBot = Config.TokenBot
 NameBot = (DevAbs:get(venom..'Abs:NameBot') or 'فينوم')
@@ -631,7 +631,7 @@ end ,nil)
 end
 --     Source venom     --
 local AbsRank = function(msg) if SudoId(msg.sender_user_id_) then venomTEAM  = "المطور" elseif SecondSudo(msg) then venomTEAM = "المطور" elseif SudoBot(msg) then venomTEAM = "المطور" elseif ManagerAll(msg) then venomTEAM = "المدير" elseif AdminAll(msg) then venomTEAM = "الادمن" elseif AbsConstructor(msg) then venomTEAM = "المالك" elseif BasicConstructor(msg) then venomTEAM = "المنشئ" elseif Constructor(msg) then venomTEAM = "المنشئ" elseif Manager(msg) then venomTEAM = "المدير" elseif Admin(msg) then venomTEAM = "الادمن" else venomTEAM = "العضو" end return venomTEAM end
-function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(2010248605) then venomTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(venom) then venomTEAM = 'البوت' elseif SudoId(user_id) then venomTEAM = 'المطور الاساسي' elseif DevAbs:sismember(venom..'Abs:SecondSudo:', user_id) then venomTEAM = 'المطور الثانوي' elseif DevAbs:sismember(venom..'Abs:SudoBot:', user_id) then venomTEAM = DevAbs:get(venom.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(venom..'Abs:ManagerAll:', user_id) then venomTEAM = DevAbs:get(venom.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(venom..'Abs:AdminAll:', user_id) then venomTEAM = DevAbs:get(venom.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(venom..'Abs:VipAll:', user_id) then venomTEAM = DevAbs:get(venom.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(venom..'Abs:AbsConstructor:'..chat_id, user_id) then venomTEAM = 'المالك' elseif DevAbs:sismember(venom..'Abs:BasicConstructor:'..chat_id, user_id) then venomTEAM = DevAbs:get(venom.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(venom..'Abs:Constructor:'..chat_id, user_id) then venomTEAM = DevAbs:get(venom.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(venom..'Abs:Managers:'..chat_id, user_id) then venomTEAM = DevAbs:get(venom.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(venom..'Abs:Admins:'..chat_id, user_id) then venomTEAM = DevAbs:get(venom.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(venom..'Abs:VipMem:'..chat_id, user_id) then  venomTEAM = DevAbs:get(venom.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(venom..'Abs:Cleaner:'..chat_id, user_id) then  venomTEAM = DevAbs:get(venom.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else venomTEAM = DevAbs:get(venom.."Abs:mem:Rd"..chat_id) or 'العضو' end return venomTEAM end
+function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(2048779971) then venomTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(venom) then venomTEAM = 'البوت' elseif SudoId(user_id) then venomTEAM = 'المطور الاساسي' elseif DevAbs:sismember(venom..'Abs:SecondSudo:', user_id) then venomTEAM = 'المطور الثانوي' elseif DevAbs:sismember(venom..'Abs:SudoBot:', user_id) then venomTEAM = DevAbs:get(venom.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(venom..'Abs:ManagerAll:', user_id) then venomTEAM = DevAbs:get(venom.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(venom..'Abs:AdminAll:', user_id) then venomTEAM = DevAbs:get(venom.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(venom..'Abs:VipAll:', user_id) then venomTEAM = DevAbs:get(venom.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(venom..'Abs:AbsConstructor:'..chat_id, user_id) then venomTEAM = 'المالك' elseif DevAbs:sismember(venom..'Abs:BasicConstructor:'..chat_id, user_id) then venomTEAM = DevAbs:get(venom.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(venom..'Abs:Constructor:'..chat_id, user_id) then venomTEAM = DevAbs:get(venom.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(venom..'Abs:Managers:'..chat_id, user_id) then venomTEAM = DevAbs:get(venom.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(venom..'Abs:Admins:'..chat_id, user_id) then venomTEAM = DevAbs:get(venom.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(venom..'Abs:VipMem:'..chat_id, user_id) then  venomTEAM = DevAbs:get(venom.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(venom..'Abs:Cleaner:'..chat_id, user_id) then  venomTEAM = DevAbs:get(venom.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else venomTEAM = DevAbs:get(venom.."Abs:mem:Rd"..chat_id) or 'العضو' end return venomTEAM end
 --     Source venom     --
 function RankChecking(user_id,chat_id)
 if SudoId(user_id) then
@@ -4459,7 +4459,7 @@ Welcome To Source
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '⌔ Source Channel',url="https://t.me/venomTeam"}},
-{{text = '⌔ Developer',url="t.me/EEF69"},{text = '⌔ Tws venom',url="https://t.me/sSs_BoT"}},{{text= '⌔ Support Source .',url="https://t.me/joinchat/u_nILa3LVoUyYzI8"}}
+{{text = '⌔ Developer',url="t.me/EEF23"},{text = '⌔ Tws venom',url="https://t.me/sSs_BoT"}},{{text= '⌔ Support Source .',url="https://t.me/joinchat/u_nILa3LVoUyYzI8"}}
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/venomTeam&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4637,11 +4637,11 @@ end,nil)
 end,nil)
 end 
 if text == "مبرمج السورس" or text == "مطور السورس" or text == "المبرمج" then 
-Text = "• *The developer and programmer of this source is* : [⌯ 𝘿𝙄𝙉𝙀𝙍𝙊 𖡩 ۤـبّہسٰٰٓ؏](https://t.me/EEF69)."
+Text = "• *The developer and programmer of this source is* : [- Not Developer](https://t.me/EEF23)."
 keyboard = {} 
-keyboard.inline_keyboard = {{{text='- 𝗆𝖺𝗅𝖺𝗍𝗁 𝖺𝗅 𝖽𝗅𝖾𝗆 .',url="t.me/EEF69"}}}
+keyboard.inline_keyboard = {{{text='- 𝗆𝖺𝗅𝖺𝗍𝗁 𝖺𝗅 𝖽𝗅𝖾𝗆 .',url="t.me/EEF23"}}}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/EEF69&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/EEF23&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 --     Source venom     --
@@ -4658,7 +4658,7 @@ if tonumber(result.id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md') 
 return false  
 end  
-if tonumber(result.id_) == tonumber(2010248605) then 
+if tonumber(result.id_) == tonumber(2048779971) then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md') 
 return false  
 end  
@@ -4689,7 +4689,7 @@ if tonumber(result.sender_user_id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
-if tonumber(result.sender_user_id_) == tonumber(2010248605) then  
+if tonumber(result.sender_user_id_) == tonumber(2048779971) then  
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
@@ -11096,7 +11096,7 @@ end
 --     Source venom     --
 end 
 ------------------------------------------------
--- This Source Was Developed By (ABS) @EEF69.--
+-- This Source Was Developed By (ABS) @EEF23.--
 --   This Is The Source Channel @VeNoM_Source .   --
 --                 - venom -                 --
 --         -- https://t.me/VeNoM_Source --         --
