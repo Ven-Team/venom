@@ -4458,7 +4458,7 @@ keyboard.inline_keyboard = {
 {{text = '⌔ Developer',url="t.me/EEF23"},{text = '⌔ Tws venom',url="https://t.me/WKWVBOT"}}
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/LaRiCaTeam&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=http://t.me/VeNoM_Source&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 
@@ -4717,7 +4717,7 @@ return false
 end 
 local venomTEAM = "صارر ستاذيي ??🏻‍♂️♥️" 
 Dev_Abs(msg.chat_id_, msg.id_, 1,venomTEAM, 1, 'md') 
-local venomTEAM = {"مواححح افيش عافيههه😍🔥💗","امممووااهحح شهلعسل🥺🍯💘","مواححح،ءوفف اذوب🤤💗"} 
+local venomTEAM = {"مواححح افيش عافيههه😍🔥💗","امممووااهحح شهلعسل🥺🍯💘","مواححح،ءوفف اذوب🤤??"} 
 Dev_Abs(msg.chat_id_, result.id_, 1,''..venomTEAM[math.random(#venomTEAM)], 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
@@ -7349,7 +7349,7 @@ local List = {
 𓄼🇮🇶 𝑴𝒔𝒈𝒔 : #msgs
 ]],
 [[
-➞: 𝒔𝒕𝒂?? #stast 𓍯➸💞.
+➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
 ➞: 𝒖𝒔𝒆𝒓𓂅 #username 𓍯➸💞.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
 ➞: 𝒊𝒅 𓂅 #id 𓍯➸💞.
