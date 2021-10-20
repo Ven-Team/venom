@@ -4462,6 +4462,17 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' ..
 return false
 end
 
+if text == 'شنو الوقت' or text == 'الوقت' or text == 'بيش الساعه' then 
+local htot = {'mathbf','mathit','mathfrak','mathrm'}
+local alwan = {'blue','green','yellow','magenta','Orange','DarkOrange','red'}
+local url1 = 'http://latex.codecogs.com/png.download?'..'\\dpi{600}%20\\huge%20\\'..htot[math.random(#htot)]..'{{\\color{'..alwan[math.random(#alwan)]..'}'..os.date("%H:%M")..'}}' 
+file = download_to_file(url1,'Miro.webp')
+print('TIMESSSS')
+ local Miro = 'https://api.telegram.org/bot' .. token .. '/sendDocument'
+local curl = 'curl "' .. Miro .. '" -F "chat_id=' .. msg.chat_id_ .. '" -F "document=@' .. 'Miro.webp' .. '"'
+io.popen(curl)
+end
+
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == "اطردني" and ChCheck(msg) or text == "ادفرني" and ChCheck(msg) then
 if DevAbs:get(venom.."Abs:Kick:Me"..msg.chat_id_) then
