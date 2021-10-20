@@ -4451,12 +4451,11 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '⌔︙حسنا قم باعادة توجيه �
 end
 --     Source venom     --
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then       
-Text = Welcome To Source "[𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 ـ Revo Source ـ ](t.me/Revo500K)"
-]]
+Text = "[ᴠᴇɴᴏᴍ ѕᴏụʀᴄᴇ ](t.me/VeNoM_Source)"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '⌔ Source Channel',url="https://t.me/venomTeam"}},
-{{text = '⌔ Developer',url="t.me/EEF23"},{text = '⌔ Tws venom',url="https://t.me/sSs_BoT"}},{{text= '⌔ Support Source .',url="https://t.me/joinchat/u_nILa3LVoUyYzI8"}}
+{{text = '⌔ Developer',url="t.me/EEF23"},{text = '⌔ Tws venom',url="https://t.me/WKWVBOT"}}
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/venomTeam&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
