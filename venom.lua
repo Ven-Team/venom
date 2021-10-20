@@ -4450,11 +4450,8 @@ DevAbs:set(venom..'Abs:viewget'..msg.sender_user_id_,true)
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌔︙حسنا قم باعادة توجيه للمنشور الذي تريدني حساب مشاهداته', 1, 'md')
 end
 --     Source venom     --
-if text == "السورس" then
-Text = [[
-Welcome To Source
-𓄇
-[˛ ᴠᴇɴᴏᴍ ѕᴏụʀᴄᴇ.](https://t.me/venomTeam)
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then       
+Text = Welcome To Source "[𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 ـ Revo Source ـ ](t.me/Revo500K)"
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
