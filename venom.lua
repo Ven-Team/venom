@@ -1975,7 +1975,7 @@ local key = {
 {'-› اذاعه عام بالتوجيه ⌁','-› اذاعه خاص بالتوجيه ⌁'},
 {'~ تعيين كلايش الاوامر ~'},
 {'تعطيل البوت الخدمي','تفعيل البوت الخدمي'},
-{'تحديث السورس','جلب نسخه الكروبات'},
+{'','تحديث السورس','جلب نسخه الكروبات'},
 {'-› حذف رد عام ⌁','-› الردود العام ⌁','-› اضف رد عام ⌁'},
 {'-› حذف رد الخاص ⌁','-› تعيين رد الخاص ⌁'},
 {'حذف قناة الاشتراك','قناة الاشتراك','تعيين قناة الاشتراك'},
@@ -4462,6 +4462,20 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' ..
 return false
 end
 
+if text == 'رابط الحذف' or text == 'رابط حذف' or text == 'رابط حذف انستا' then
+Text = "رابط الحذف في جميع مواقع التواصل فكر قبل لا تتسرع وتروح"
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = ' ● رابط حذف تلي كرام ●.',url="https://my.telegram.org/auth?to=delete"}},
+{{text = ' ● رابط حذف الانستا ●.',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}},
+{{text = '● رابط حذف فيسبوك ● .',url="https://www.facebook.com/help/deleteaccount"}},
+{{text = ' ● رابط حذف سناب شات ● .',url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false
+end
+
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == "اطردني" and ChCheck(msg) or text == "ادفرني" and ChCheck(msg) then
 if DevAbs:get(venom.."Abs:Kick:Me"..msg.chat_id_) then
@@ -4594,7 +4608,13 @@ getUser(msg.sender_user_id_,get_firstname)
 end   
 --     Source venom     --
 if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '⌔︙@cCVCcBoT', 1, 'md') end
-if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://t.me/cClCcBoT"}}} SendInline(msg.chat_id_,'⌔︙اضغط للحصول على الرابط',nil,inline) return false end
+if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then
+ local inline = {{text = ' ● رابط حذف تلي كرام ●.',url="https://my.telegram.org/auth?to=delete"}},
+{{text = ' ● رابط حذف الانستا ●.',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}},
+{{text = '● رابط حذف فيسبوك ● .',url="https://www.facebook.com/help/deleteaccount"}},
+{{text = ' ● رابط حذف سناب شات ● .',url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}},
+}
+return false end
 if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://t.me/cClCcBoT"}}} SendInline(msg.chat_id_,'⌔︙اضغط للحصول على البوت',nil,inline) return false end
 if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevAbs:get(venom..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_Abs(msg.chat_id_, msg.id_, 1, "⌔︙عدد جهاتك المضافه -› *❨ "..add.." ❩* ", 1, 'md') end
 if text == "تعديلاتي" or text == "سحكاتي" and ChCheck(msg) then local edit_msg = DevAbs:get(venom..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0  Dev_Abs(msg.chat_id_, msg.id_, 1, "⌔︙عدد تعديلاتك -› *❨ "..edit_msg.." ❩* ", 1, 'md') end
