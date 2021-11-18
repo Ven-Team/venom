@@ -539,10 +539,6 @@ elseif parse_mode == 'html' then
 parse_mode = "Html"
 end
 end
-local Abs = "https://api.telegram.org/bot" ..TokenBot.. '/sendMessage?chat_id=' .. chat_id
-if reply_to_message_id ~= 0 then
-Abs = Abs .. '&reply_to_message_id=' .. reply_to_message_id/2097152/0.5 
-end
 if disable_web_page_preview then
 Abs = Abs .. '&disable_web_page_preview=true'
 end
@@ -3938,7 +3934,7 @@ name = string.gsub(name,'🌑','🌚🌚🌚🌚🌚🌑🌚🌚')
 name = string.gsub(name,'🌚','🌑🌑🌑🌑🌑🌚🌑🌑')
 name = string.gsub(name,'⭐️','🌟🌟🌟🌟🌟🌟⭐️🌟')
 name = string.gsub(name,'📥','💫💫💫📥💫💫💫💫')
-name = string.gsub(name,'⛈','🌨🌨🌨⛈🌨🌨🌨🌨')
+name = string.gsub(name,'⛈','??🌨🌨⛈🌨🌨🌨🌨')
 name = string.gsub(name,'🌥','⛅️⛅️⛅️🌥⛅️⛅️⛅️⛅️')
 name = string.gsub(name,'⛄️','☃️☃️☃️☃️⛄️☃️☃️☃️☃️')
 name = string.gsub(name,'👨‍🔬','👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👨‍🔬👩‍🔬👩‍🔬')
@@ -4638,9 +4634,9 @@ end,nil)
 end,nil)
 end 
 if text == "مبرمج السورس" or text == "مطور السورس" or text == "المبرمج" then 
-Text = "• *The developer and programmer of this source is* : [- Dr. abass](https://t.me/wKwvv)."
+Text = "• *The developer and programmer of this source is* : [- Not Developer](https://t.me/EEF23)."
 keyboard = {} 
-keyboard.inline_keyboard = {{{text='- Dr. abass .',url="t.me/wKwvv"}}}
+keyboard.inline_keyboard = {{{text='- 𝗆𝖺𝗅𝖺𝗍𝗁 𝖺𝗅 𝖽𝗅𝖾𝗆 .',url="t.me/EEF23"}}}
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/EEF23&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
@@ -7348,7 +7344,7 @@ local List = {
 ]],
 [[
 𓄼🇮🇶 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username 
-??🇮🇶 𝑺𝒕𝒂𝒔𝒕 : #stast 
+𓄼🇮🇶 𝑺𝒕𝒂𝒔𝒕 : #stast 
 𓄼🇮🇶 𝒊𝒅 : #id 
 𓄼🇮🇶 𝑮𝒂𝒎𝒆𝑺 : #game 
 𓄼🇮🇶 𝑴𝒔𝒈𝒔 : #msgs
