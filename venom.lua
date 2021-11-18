@@ -539,6 +539,12 @@ elseif parse_mode == 'html' then
 parse_mode = "Html"
 end
 end
+k
+k
+l
+if 
+A
+end
 if disable_web_page_preview then
 Abs = Abs .. '&disable_web_page_preview=true'
 end
@@ -591,6 +597,11 @@ url = url.."&parse_mode=Markdown&disable_web_page_preview=true"
 elseif markdown == "html" then 
 url = url.."&parse_mode=HTML" 
 end 
+k
+k
+u
+r
+end
 --     Source venom     --
 function SendInline(chat_id,text,keyboard,inline,reply_id) 
 local response = {} 
@@ -3934,7 +3945,7 @@ name = string.gsub(name,'🌑','🌚🌚🌚🌚🌚🌑🌚🌚')
 name = string.gsub(name,'🌚','🌑🌑🌑🌑🌑🌚🌑🌑')
 name = string.gsub(name,'⭐️','🌟🌟🌟🌟🌟🌟⭐️🌟')
 name = string.gsub(name,'📥','💫💫💫📥💫💫💫💫')
-name = string.gsub(name,'⛈','??🌨🌨⛈🌨🌨🌨🌨')
+name = string.gsub(name,'⛈','🌨🌨🌨⛈🌨🌨🌨🌨')
 name = string.gsub(name,'🌥','⛅️⛅️⛅️🌥⛅️⛅️⛅️⛅️')
 name = string.gsub(name,'⛄️','☃️☃️☃️☃️⛄️☃️☃️☃️☃️')
 name = string.gsub(name,'👨‍🔬','👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👨‍🔬👩‍🔬👩‍🔬')
@@ -7352,7 +7363,7 @@ local List = {
 [[
 ➞: 𝒔𝒕??𓂅 #stast 𓍯➸💞.
 ➞: 𝒖𝒔𝒆𝒓𓂅 #username 𓍯➸💞.
-➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
+➞: 𝒎𝒔𝒈𝒆?? #msgs 𓍯➸💞.
 ➞: 𝒊𝒅 𓂅 #id 𓍯➸💞.
 ]],
 [[
