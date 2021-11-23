@@ -539,11 +539,11 @@ elseif parse_mode == 'html' then
 parse_mode = "Html"
 end
 end
-keyboard = {}
-keyboard.inline_keyboard = {{{text = '˛ ᴠᴇɴᴏᴍ ѕᴏụʀᴄᴇ.',url="t.me/VeNoM_Source"}}}
-local Abs = "https://api.telegram.org/bot" ..TokenBot.. '/sendMessage?chat_id=' .. chat_id
-if reply_to_message_id ~= 0 then
-Abs = Abs .. '&reply_to_message_id=' .. reply_to_message_id/2097152/0.5 
+end
+end
+end
+end
+end
 end
 if disable_web_page_preview then
 Abs = Abs .. '&disable_web_page_preview=true'
@@ -597,10 +597,10 @@ url = url.."&parse_mode=Markdown&disable_web_page_preview=true"
 elseif markdown == "html" then 
 url = url.."&parse_mode=HTML" 
 end 
-keyboard = {}
-keyboard.inline_keyboard = {{{text = '˛ ᴠᴇɴᴏᴍ ѕᴏụʀᴄᴇ.',url="t.me/VeNoM_Source"}}}
-url = url..'&reply_markup='..JSON.encode(keyboard)
-return GetApi(url) 
+end
+end
+end
+end
 end
 --     Source venom     --
 function SendInline(chat_id,text,keyboard,inline,reply_id) 
@@ -3944,7 +3944,7 @@ name = string.gsub(name,'🐇','🕊🕊🕊🕊🕊🐇🕊🕊')
 name = string.gsub(name,'🌑','🌚🌚🌚🌚🌚🌑🌚🌚')
 name = string.gsub(name,'🌚','🌑🌑🌑🌑🌑🌚🌑🌑')
 name = string.gsub(name,'⭐️','🌟🌟🌟🌟🌟🌟⭐️🌟')
-name = string.gsub(name,'📥','💫💫💫📥💫💫💫💫')
+name = string.gsub(name,'📥','💫💫??📥💫💫💫💫')
 name = string.gsub(name,'⛈','🌨🌨🌨⛈🌨🌨🌨🌨')
 name = string.gsub(name,'🌥','⛅️⛅️⛅️🌥⛅️⛅️⛅️⛅️')
 name = string.gsub(name,'⛄️','☃️☃️☃️☃️⛄️☃️☃️☃️☃️')
@@ -9231,7 +9231,7 @@ keyboard.inline_keyboard = {
 {{text = '᥀ venom Team .',url="t.me/VeNoM_Source"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/GifLaricA/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/Gifvenom/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text and (text == "ميمز" or text == "-› ميمز ᥀") and not DevAbs:get(venom..'Abs:memz:Abs'..msg.chat_id_) and SourceCh(msg) then
 Abs = math.random(2,1201); 
@@ -9241,7 +9241,7 @@ keyboard.inline_keyboard = {
 {{text = '᥀ venom Team .',url="t.me/VeNoM_Source"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/MemzLaricA/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/Memzvenom/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --     Source venom     --
 if Admin(msg) then
